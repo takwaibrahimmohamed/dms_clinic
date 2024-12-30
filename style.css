@@ -11,19 +11,22 @@ body{
 
 /* Sidebar Styling */
 .sidebar {
-    /* width: 200px; */
+   
     position: fixed;
     left: 0;
     top: 0;
     bottom: 0;
     transition: width 0.3s ease;
     background-color: white;
-    margin-top: 64px;
+    margin-top: 64px !important;
   }
   .sidebar.collapsed {
     width: 120px;
   }
-
+.sidebar_parent{
+  width: 200px !important; 
+ 
+}
   .sidebar .nav-link{
     color: var(--secondary-color);
     font-weight: 600;
@@ -75,16 +78,17 @@ body{
     padding-left:0 !important ;
   }
 .sidebar_heade.collapsed{
- width: 8.5% !important;
+ width: 100px !important;
 }
 .sidebar_parent.collapsed{
-  width: 10%;
+  width: 120px !important;
 }
+  
    #main-content.collapsed{
-   width: 85%;
+   width: calc(100% - 120px - 2rem);
   }
   .sider_main_head.collapsed{
-   width: 89% !important;
+    width: calc(100% - 100px - 2rem) !important;
   }
   .cust_line.show{
     display: none;
@@ -144,7 +148,7 @@ font-weight: 400;
   }
   #main-content {
 margin-top: 5rem !important;
-width: 81%;
+width:calc(100% - 200px - 2rem)
   }
 
   /* custom scroll  */
