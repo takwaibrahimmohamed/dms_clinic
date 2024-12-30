@@ -1,0 +1,93 @@
+
+.card {
+    background-color: #e9ecef; /* Light gray background */
+    border-radius: 8px;
+    overflow-y: auto;
+    min-height:calc(40vh / 2 - 1.7rem);
+  }
+ .card.larg-card{
+    min-height:40vh;
+ }
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .section-header h5 {
+    margin: 0;
+   font-weight: 500;
+   font-size: 18px;
+  
+   color: var(--blue_color);
+  }
+
+  .btn-custom {
+    background-color: var(--aque-color);
+    color: var(--primary-color);
+    border: none;
+    font-size: 12px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+
+  .btn-custom:hover {
+    color: var(--primary-color);
+  }
+  .fade-in-right {
+    animation: fadeInRight 1s forwards;
+  }
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .modal.fade-in-right .modal-dialog {
+    position:absolute;
+    top:0;
+    right:10px;
+    margin:0;
+  }
+  
+  #add_patientLabel{
+color: var(--blace-color);
+font-weight: 500;
+font-size: 16px;
+  }
+  .info_uploadImg button{
+    all: unset;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .info_uploadImg button:first-child{
+   color:var(--primary-color);
+
+   
+  }
+  .info_uploadImg button:nth-child(2){
+   color:var(--danger-color);
+   
+  }
+  .info_uploadImg p{
+    font-weight: 400;
+    font-size: 14px;
+   color:var(--gry_color);
+   
+  }
+  #add_patient .modal-footer{
+   border-top: 0 !important;
+  }
+  .modal-footer .add_patient{
+    background-color: var(--primary-color);
+  }
